@@ -1,0 +1,74 @@
+#login input {
+  outline: none;
+  border: none;
+  background: none; }
+
+#login .jump {
+  display: block;
+  height: 40px;
+  font: 12px/40px ""; }
+  #login .jump a {
+    color: #959595; }
+
+#login .cont .cont-r {
+  display: block;
+  float: right; }
+
+#login .cont .login {
+  float: left;
+  width: 430px;
+  height: 590px;
+  border: 1px solid #ddd;
+  padding-left: 30px; }
+  #login .cont .login i {
+    display: block;
+    margin: 38px 0;
+    background: url(../images/user.png) no-repeat 5px;
+    height: 26px;
+    font: 16px/26px "";
+    color: #333;
+    padding-left: 45px; }
+  #login .cont .login p {
+    margin-bottom: 30px;
+    width: 398px;
+    height: 42px;
+    border: 1px solid #ddd; }
+    #login .cont .login p label {
+      width: 100px;
+      height: 28px;
+      margin-top: 7px;
+      border-right: 1px solid #ddd;
+      display: block;
+      float: left;
+      font: 12px/28px "";
+      color: #333;
+      text-align: center; }
+    #login .cont .login p input {
+      float: left;
+      width: 280px;
+      height: 28px;
+      margin-top: 7px;
+      background: url(../images/dui.png) no-repeat 262px;
+      font: 12px/28px "";
+      color: #333;
+      padding-left: 15px; }
+  #login .cont .login .btn {
+    width: 400px;
+    height: 58px;
+    background: #ff6900;
+    color: #fff;
+    font-size: 24px; }
+  #login .cont .login span {
+    width: 400px;
+    font: 14px/36px "";
+    height: 36px; }
+    #login .cont .login span b {
+      display: block;
+      float: right; }
+    #login .cont .login span a {
+      display: block;
+      float: right;
+      padding-right: 30px;
+      color: #8ab700; }
+    #login .cont .login span a:hover {
+      text-decoration: underline; }
