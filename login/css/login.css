@@ -72,3 +72,16 @@
       color: #8ab700; }
     #login .cont .login span a:hover {
       text-decoration: underline; }
+
+#login .mask {
+  width: 200px;
+  height: 80px;
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  left: 200px;
+  top: 400px;
+  border-radius: 6px;
+  text-align: center;
+  font: 16px/80px "";
+  color: #fff;
+  display: none; }

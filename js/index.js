@@ -31,8 +31,6 @@
             //绑定事件
             this.addEvent();
             this.cityDisplay();
-            // 轮播图（自己封装的轮播图插件）
-            this.banner();
             
         }
         addEvent(){
@@ -103,15 +101,6 @@
                     this.adress.innerHTML = str;
                     this.city.style.display = "none";
                 }
-            })
-        }
-        // 轮播图
-        banner(){
-            $("#banner").banner({
-                items:$("#banner .imgbox").children(),
-                left:$("#banner #left"),
-                right:$("#banner #right"),
-                autoPlay:true,
             })
         }
         // 渲染三级菜单页面

@@ -55,9 +55,10 @@
   #register .cont .register .btn {
     width: 400px;
     height: 58px;
-    background: #bbb;
+    background: #ff6900;
     color: #fff;
-    font-size: 24px; }
+    font-size: 24px;
+    cursor: pointer; }
   #register .cont .register span {
     width: 400px;
     font: 14px/36px "";
@@ -72,3 +73,16 @@
       color: #8ab700; }
     #register .cont .register span a:hover {
       text-decoration: underline; }
+
+#register .mask {
+  width: 200px;
+  height: 80px;
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  left: 200px;
+  top: 400px;
+  border-radius: 6px;
+  text-align: center;
+  font: 16px/80px "";
+  color: #fff;
+  display: none; }
