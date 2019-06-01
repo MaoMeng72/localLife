@@ -22,7 +22,8 @@
   display: block;
   float: left;
   color: #ff6900;
-  margin-left: 9px; }
+  margin-left: 9px;
+  cursor: pointer; }
 
 #top .top-c {
   float: left;
@@ -349,7 +350,7 @@ nav {
   top: 183px;
   outline: none; }
 
-/* 优势 */
+/*优势*/
 #advantage {
   height: 120px;
   background: #f8f8f6;
