@@ -17,7 +17,7 @@ define(function(){
         display(){
             let str = "";
             for(let i=0;i<10;i++){
-                str += `<li index=${this.res[i].id}><a href="goods/goods.html">
+                str += `<li index=${this.res[i].id} class="sp"><a href="goods/goods.html">
                             <img src="${this.res[i].url}" alt="">
                             <b>${this.res[i].name}</b>
                             <i>${this.res[i].tip}</i>

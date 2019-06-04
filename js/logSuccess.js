@@ -30,7 +30,6 @@
                 if(target.className == "back"){
                     for(let i=0;i<this.data.length;i++){
                         this.data[i].onoff = 0;
-                        console.log(this.data)
                     }
                     this.logout.innerHTML = `<span>您好，请</span>
                                             <a href="login/login.html">[登陆]</a>
