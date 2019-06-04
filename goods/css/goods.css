@@ -1,0 +1,101 @@
+#goods .link {
+  height: 40px;
+  font: 12px/40px "";
+  color: #959595; }
+  #goods .link a {
+    display: block;
+    color: #959595;
+    float: left; }
+  #goods .link b {
+    display: block;
+    float: left;
+    margin: 0 10px; }
+
+#goods .goods-b {
+  overflow: hidden; }
+  #goods .goods-b .box {
+    width: 500px;
+    height: 500px;
+    float: left;
+    border: 1px solid #eee; }
+  #goods .goods-b .s_box {
+    width: 500px;
+    height: 500px;
+    position: absolute; }
+  #goods .goods-b .s_box img {
+    width: 500px;
+    height: 500px; }
+  #goods .goods-b .s_box span {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 134px;
+    height: 100px;
+    background: url(../../images/1.png);
+    background-size: 500px 500px;
+    display: none; }
+  #goods .goods-b .b_box {
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    top: 215px;
+    left: 575.5px;
+    overflow: hidden;
+    display: none;
+    border: 1px solid #eee; }
+  #goods .goods-b .b_box img {
+    position: absolute;
+    width: 1000px;
+    height: 1000px; }
+  #goods .goods-b .introduce {
+    float: left;
+    margin-left: 35px;
+    width: 660px; }
+    #goods .goods-b .introduce .title {
+      border-bottom: 1px solid #eee; }
+      #goods .goods-b .introduce .title h3 {
+        color: #4c4c4c;
+        font: 700 20px/38px ""; }
+      #goods .goods-b .introduce .title h4 {
+        color: #ff6900;
+        font: 14px/20px "";
+        margin-bottom: 10px; }
+    #goods .goods-b .introduce .buy {
+      border-bottom: 1px solid #eee; }
+      #goods .goods-b .introduce .buy p {
+        overflow: hidden;
+        margin-top: 18px; }
+        #goods .goods-b .introduce .buy p span {
+          display: block;
+          float: left;
+          width: 58px;
+          height: 26px;
+          font: 14px/26px "";
+          text-align: center;
+          color: #fff;
+          background: #ff6900; }
+        #goods .goods-b .introduce .buy p b {
+          display: block;
+          float: left;
+          font: 700 20px/26px "";
+          color: #ff6900;
+          margin: 0 15px; }
+        #goods .goods-b .introduce .buy p s {
+          display: block;
+          float: left;
+          color: #4c4c4c;
+          margin-top: 9px;
+          font: 700 12px/18px "";
+          text-decoration: line-through; }
+      #goods .goods-b .introduce .buy img {
+        margin: 22px 0 18px 0; }
+    #goods .goods-b .introduce .car {
+      width: 182px;
+      height: 52px;
+      background: #ff6900 url(../images/car.png) no-repeat 20px;
+      color: #fff;
+      font: 700 24px/52px "";
+      padding-left: 52px;
+      box-sizing: border-box;
+      margin-top: 25px;
+      cursor: pointer; }
