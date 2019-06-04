@@ -1,5 +1,10 @@
 ;(function(){
     "use strict";
+    class Magnifier{
+        constructor(){
+            
+        }
+    }
     function Magnifier(){
         // 1.选元素
         this.sBox = document.querySelector(".s_box");

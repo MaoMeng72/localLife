@@ -32,6 +32,7 @@
             //绑定事件
             this.addEvent();
             this.cityDisplay();
+            this.menuDisplay();
             
         }
         addEvent(){
@@ -50,20 +51,20 @@
         }
 
             // 一级菜单的点击事件
-            this.menuT.onmouseover  =function(){
+            this.menuT.onmouseenter  =function(){
                     that.seMenu.style.display = "block";
             }
 
-            this.seMenu.addEventListener("mouseout",function(eve){
+            this.seMenu.addEventListener("mouseleave",function(eve){
                 let e = eve || window.event;
                 let target = e.target || e.srcElement;
-                if(target.nodeName == "LI"){
+                if(target.className == "seMenu"){
                     that.seMenu.style.display = "none";
                 }
             })
 
             // 二级菜单的事件委托
-            this.seMenu.addEventListener("mouseover",function(eve){
+            this.seMenu.addEventListener("mouseenter",function(eve){
                 for(let i=0;i<that.ali.length;i++){
                     that.ali[i].className = "";
                 }
@@ -73,12 +74,11 @@
                     that.liIndex = target.parentNode.index;
                     target.parentNode.className = "active";
                     that.third.style.display = "block";
-                    // 渲染三级菜单页面
-                    that.menuDisplay();
+                    
                 }
             })
             // 三级菜单的事件委托
-            this.seMenu.addEventListener("mouseout",function(eve){
+            this.seMenu.addEventListener("mouseleave",function(eve){
                 let e = eve || window.event;
                 let target = e.target || e.srcElement;
                 if(target.className == "seMenu"){
