@@ -52,6 +52,9 @@
         box-sizing: border-box;
         float: left;
         margin: 15px 0 0 15px; }
+      .cont .cont-l p a:hover {
+        background: #91be16;
+        color: #fff; }
   .cont .cont-r {
     float: left; }
     .cont .cont-r span {
@@ -64,3 +67,56 @@
       text-align: center;
       color: #91be16;
       border-right: 1px solid #91be16; }
+    .cont .cont-r ul {
+      border-top: 1px solid #eee;
+      border-left: 1px solid #eee;
+      overflow: hidden;
+      width: 882px; }
+      .cont .cont-r ul li {
+        border-bottom: 1px solid #eee;
+        border-right: 1px solid #eee;
+        width: 176px;
+        height: 273px;
+        padding: 20px 19px 0 19px;
+        box-sizing: border-box;
+        float: left; }
+        .cont .cont-r ul li img {
+          width: 140px;
+          height: 140px;
+          display: block; }
+        .cont .cont-r ul li b {
+          font: 14px/20px "";
+          margin-top: 14px;
+          width: 140px;
+          display: block;
+          color: #3e4141;
+          overflow: hidden;
+          height: 20px; }
+        .cont .cont-r ul li i {
+          font: 12px/20px "";
+          width: 140px;
+          display: block;
+          color: #898989;
+          overflow: hidden;
+          height: 20px; }
+        .cont .cont-r ul li s {
+          color: #ff8100;
+          font: 14px/40px ""; }
+
+/*楼层*/
+#floor {
+  position: fixed;
+  top: 200px;
+  left: 0; }
+  #floor div {
+    width: 40px;
+    height: 40px;
+    color: #91be16;
+    border: 1px solid #91be16;
+    box-sizing: border-box;
+    padding: 4px 5px;
+    font: 12px/16px "";
+    cursor: pointer; }
+  #floor div:hover {
+    background: #91be16;
+    color: #fff; }
