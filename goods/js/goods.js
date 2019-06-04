@@ -8,6 +8,7 @@
             this.url = "http://localhost/life/data/goods.json";
 
             this.init();
+            this.addEvent();
         }
         init(){
             var that = this;
@@ -52,6 +53,40 @@
                 }
                 this.a.innerHTML = str1;
                 this.cont.innerHTML = str2;
+            }
+        }
+        addEvent(){
+            this.cont.addEventListener("click",(eve)=>{
+                let e = eve || window.event;
+                let target = e.target || e.srcElement;
+                if(target.className == "car"){
+                    this.setData();
+                }
+            })
+        }
+        setData(){
+            this.car = JSON.parse(localStorage.getItem("car"));
+            var onoff = 0;
+            if(this.car == null){
+                this.car = [{
+                    id:this.goods,
+                    num:1
+                }];
+                localStorage.setItem("car",JSON.stringify(this.car));
+            }else{
+                for(let i=0;i<this.car.length;i++){
+                    if(this.car[i].id == this.goods){
+                        this.car[i].num++;
+                        onoff = 1;
+                    }
+                }
+                if(onoff == 0){
+                    this.car.push({
+                        id:this.goods,
+                        num:1
+                    })
+                }
+                localStorage.setItem("car",JSON.stringify(this.car));
             }
         }
     }
