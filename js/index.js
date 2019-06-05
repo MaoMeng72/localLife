@@ -11,6 +11,7 @@
             // 获取城市蒙版中的ul，写数据渲染页面
             this.allCity = document.querySelector(".top-c .city-b .allCity");
             // 获取一级菜单
+            this.menu = document.querySelector("nav .menu");
             this.menuT = document.querySelector("nav .menu-t");
             // 获取二级菜单
             this.seMenu = document.querySelector("nav .seMenu");
@@ -32,7 +33,6 @@
             //绑定事件
             this.addEvent();
             this.cityDisplay();
-            this.menuDisplay();
             
         }
         addEvent(){
@@ -48,49 +48,82 @@
 
             this.menuT.onclick  =function(){
                 location.href = "http://localhost/life/goods/list.html"
-        }
+            }
 
-            // 一级菜单的点击事件
+            // 一级菜单的鼠标滑过事件
             this.menuT.onmouseenter  =function(){
                     that.seMenu.style.display = "block";
             }
 
-            this.seMenu.addEventListener("mouseleave",function(eve){
+            this.seMenu.addEventListener("mouseover",(eve)=>{
                 let e = eve || window.event;
                 let target = e.target || e.srcElement;
-                if(target.className == "seMenu"){
-                    that.seMenu.style.display = "none";
-                }
-            })
-
-            // 二级菜单的事件委托
-            this.seMenu.addEventListener("mouseenter",function(eve){
                 for(let i=0;i<that.ali.length;i++){
                     that.ali[i].className = "";
                 }
+                if(target.nodeName == "LI"||"SPAN"||"I"){
+                    if(target.nodeName == "LI"){
+                        target.className = "active";
+                        this.liIndex = target.index;
+
+                    }
+                    if(target.nodeName == "SPAN"||"I" && target.nodeName != "LI" && target.nodeName != "UL"){
+                        target.parentNode.className = "active";
+                        this.liIndex = target.parentNode.index;
+                    }
+                    this.third.style.display = "block";
+                    this.menuDisplay();
+                }
+            })
+
+            this.menu.addEventListener("mouseleave",(eve)=>{
                 let e = eve || window.event;
                 let target = e.target || e.srcElement;
-                if(target.nodeName == "SPAN"){
-                    that.liIndex = target.parentNode.index;
-                    target.parentNode.className = "active";
-                    that.third.style.display = "block";
+                if(target.className == "seMenu"||"third"){
+                    console.log(target)
+                    this.seMenu.style.display = "none";
+                    this.third.style.display = "none";
                     
                 }
             })
-            // 三级菜单的事件委托
-            this.seMenu.addEventListener("mouseleave",function(eve){
-                let e = eve || window.event;
-                let target = e.target || e.srcElement;
-                if(target.className == "seMenu"){
-                    that.third.style.display = "none";
-                    for(let i=0;i<that.ali.length;i++){
-                        that.ali[i].className = "";
-                    }
-                }
-            })
+
+            // this.seMenu.addEventListener("mouseleave",function(eve){
+            //     let e = eve || window.event;
+            //     let target = e.target || e.srcElement;
+            //     if(target.className == "seMenu"){
+            //         that.seMenu.style.display = "none";
+            //     }
+            // })
+
+            // // 二级菜单的事件委托
+            // this.seMenu.addEventListener("mouseover",function(eve){
+            //     let e = eve || window.event;
+            //     let target = e.target || e.srcElement;
+            //     for(let i=0;i<that.ali.length;i++){
+            //         that.ali[i].className = "";
+            //     }
+            //     if(target.nodeName == "I"||"SPAN"){
+            //         console.log(target)
+            //         that.liIndex = target.parentNode.index;
+            //         target.parentNode.className = "active";
+            //         that.third.style.display = "block";
+            //         that.menuDisplay();
+                    
+            //     }
+            // })
+            // // 三级菜单的事件委托
+            // this.seMenu.addEventListener("mouseleave",function(eve){
+            //     let e = eve || window.event;
+            //     let target = e.target || e.srcElement;
+            //     if(target.className == "seMenu"){
+            //         that.third.style.display = "none";
+            //         for(let i=0;i<that.ali.length;i++){
+            //             that.ali[i].className = "";
+            //         }
+            //     }
+            // })
             
             // 购物车的点击事件
-        
             this.data = JSON.parse(localStorage.getItem("data"));
             var o = 1;
             this.car.onclick = function(){
