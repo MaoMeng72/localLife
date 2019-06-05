@@ -6,6 +6,8 @@ define(function(){
             this.url = options.url;
             this.init();
             this.h();
+
+            this.addEvent();
         }
         init(){
             var that = this;
@@ -17,7 +19,7 @@ define(function(){
         display(){
             let str = "";
             for(let i=0;i<10;i++){
-                str += `<li index=${this.res[i].id} class="sp"><a href="goods/goods.html">
+                str += `<li index=${this.res[i].id} class="sp"><a href="http://localhost/life/goods/goods.html">
                             <img src="${this.res[i].url}" alt="">
                             <b>${this.res[i].name}</b>
                             <i>${this.res[i].tip}</i>
@@ -26,6 +28,19 @@ define(function(){
             }
             for(let i=0;i<this.list.length;i++){
                 this.list[i].innerHTML = str;
+            }
+        }
+        addEvent(){
+            var that = this;
+            for(let i=0;i<this.list.length;i++){
+                this.list[i].addEventListener("click",function(eve){
+                    let e = eve || window.event;
+                    let target = e.target || e.srcElement;
+                    if(target.ndoeName == "IMG"||"B"||"I"||"S"){
+                        that.id = target.parentNode.parentNode.getAttribute("index");
+                        localStorage.setItem("goods",that.id)
+                    }
+                })
             }
         }
         h(){
