@@ -80,48 +80,12 @@
                 let e = eve || window.event;
                 let target = e.target || e.srcElement;
                 if(target.className == "seMenu"||"third"){
-                    console.log(target)
                     this.seMenu.style.display = "none";
                     this.third.style.display = "none";
                     
                 }
             })
 
-            // this.seMenu.addEventListener("mouseleave",function(eve){
-            //     let e = eve || window.event;
-            //     let target = e.target || e.srcElement;
-            //     if(target.className == "seMenu"){
-            //         that.seMenu.style.display = "none";
-            //     }
-            // })
-
-            // // 二级菜单的事件委托
-            // this.seMenu.addEventListener("mouseover",function(eve){
-            //     let e = eve || window.event;
-            //     let target = e.target || e.srcElement;
-            //     for(let i=0;i<that.ali.length;i++){
-            //         that.ali[i].className = "";
-            //     }
-            //     if(target.nodeName == "I"||"SPAN"){
-            //         console.log(target)
-            //         that.liIndex = target.parentNode.index;
-            //         target.parentNode.className = "active";
-            //         that.third.style.display = "block";
-            //         that.menuDisplay();
-                    
-            //     }
-            // })
-            // // 三级菜单的事件委托
-            // this.seMenu.addEventListener("mouseleave",function(eve){
-            //     let e = eve || window.event;
-            //     let target = e.target || e.srcElement;
-            //     if(target.className == "seMenu"){
-            //         that.third.style.display = "none";
-            //         for(let i=0;i<that.ali.length;i++){
-            //             that.ali[i].className = "";
-            //         }
-            //     }
-            // })
             
             // 购物车的点击事件
             this.data = JSON.parse(localStorage.getItem("data"));

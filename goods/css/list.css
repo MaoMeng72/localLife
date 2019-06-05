@@ -10,7 +10,8 @@
     width: 175px;
     height: 175px;
     margin-bottom: 40px;
-    display: block; }
+    display: block;
+    background: pink; }
   #list .list span {
     color: #1b1b15;
     font-size: 14px;
