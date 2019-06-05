@@ -1,18 +1,14 @@
 ;(function(){
     "use strict";
-    class Magnifier{
-        constructor(){
-            
-        }
-    }
+    
     function Magnifier(){
         // 1.选元素
-        this.sBox = document.querySelector(".s_box");
-        this.span = document.querySelector(".s_box span");
+        this.sBox = document.querySelector("#goods .s_box");
+        this.span = document.querySelector("#goods .s_box span");
 
-        this.sImg = document.querySelector(".s_box img");
+        this.sImg = document.querySelector("#goods .s_box img");
 
-        this.bBox = document.querySelector(".b_box");
+        this.bBox = document.querySelector("#goods .b_box");
         this.bImg = this.bBox.children[0];
 
         // 2.绑定事件：进入，移动，离开

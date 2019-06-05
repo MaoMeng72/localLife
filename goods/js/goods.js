@@ -3,7 +3,10 @@
     class Goods{
         constructor(){
             this.a = document.querySelector(".link .details");
-            this.cont = document.querySelector(".goods-b");
+            this.cont = document.querySelector(".goods-b .introduce");
+            this.span = document.querySelector(".goods-b .s_box span");
+            this.sImg = document.querySelector(".goods-b .s_box img");
+            this.bImg = document.querySelector(".goods-b .b_box img");
 
             this.url = "http://localhost/life/data/goods.json";
 
@@ -29,17 +32,7 @@
             for(let i=0;i<this.res.length;i++){
                 if(this.res[i].id == this.goods){
                     str1 = `<a href="#" class="details">${this.res[i].name}</a>`;
-                    str2 = `<div class="box">
-                                <div class="s_box">
-                                    <img src="${this.res[i].url}" alt="">
-                                    <span></span>
-                                </div>
-                                <div class="b_box">
-                                    <img src="${this.res[i].url} alt="">
-                                </div>
-                            </div>
-                            <div class="introduce">
-                                <div class="title">
+                    str2 = `<div class="title">
                                     <h3>${this.res[i].name}</h3>
                                     <h4>${this.res[i].tip}</h4>
                                 </div>
@@ -48,12 +41,15 @@
                                     <img src="images/buy.png" alt="">
                                 </div>
                                 <div class="car">加入购物车</div>
-                            </div>
-                        </div>`;
+                            </div>`;
+                    this.src = this.res[i].url;
                 }
-                this.a.innerHTML = str1;
-                this.cont.innerHTML = str2;
             }
+            this.a.innerHTML = str1;
+            this.cont.innerHTML = str2; 
+            this.sImg.src = this.src;
+            this.bImg.src = this.src;
+            this.span.background = "url(this.src)";
         }
         addEvent(){
             this.cont.addEventListener("click",(eve)=>{
