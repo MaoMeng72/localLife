@@ -1,0 +1,18 @@
+#register{
+    input{outline: none;border: none;background: none;}
+    .jump{display: block;height: 40px;font:12px/40px "";
+    a{color:#959595;}}
+    .cont{.cont-r{display: block;float: right;}
+    .register{float: left;width: 430px;height: 590px;border:1px solid #ddd;padding-left:30px;
+    i{display: block;margin:38px 0;background: url(../images/phone.png) no-repeat 5px;height: 26px;font:16px/26px "";color:#333;padding-left: 35px;}
+    p{margin-bottom: 30px;width: 398px;height: 42px;border:1px solid #ddd;
+        label{width: 100px;height: 28px;margin-top:7px;border-right: 1px solid #ddd;display: block;float: left;font:12px/28px "";color:#333;text-align: center;}
+        input{float: left;width: 280px;height: 28px;margin-top:7px;background: url(../images/dui.png) no-repeat 262px;font:12px/28px "";color:#333;padding-left: 15px;}
+    }
+    .btn{width: 400px;height: 58px;background: #ff6900;color:#fff;font-size: 24px;cursor: pointer;}
+    span{width: 400px;font:14px/36px "";height: 36px;
+    b{display: block;float: right;}
+    a{display: block;float: right;padding-right:30px;color:#8ab700;}
+a:hover{text-decoration: underline;}}}}
+    .mask{width: 200px;height: 80px;background: rgba(0, 0, 0, 0.5);position: fixed;left:200px;top:400px;border-radius: 6px;text-align: center;font:16px/80px "";color:#fff;display: none;}
+}

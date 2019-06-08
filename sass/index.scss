@@ -1,0 +1,28 @@
+.margin {width: 1200px;margin: 0 auto; }
+/*优惠*/
+#discount{height: 175px;
+a{display: block;float: left;width:300px;height:175px;
+img{display: block;}}}
+
+.sort-t{display: block;margin:20px 0 10px 0;}
+.cont{overflow: hidden;
+    .cont-l{float: left;
+    span{display: block;width:314px;height: 48px;border-right: 1px solid #91be16;border-bottom: 1px solid #91be16;font:18px/48px "";text-align: center;}
+    img{display: block;}
+    p{background: #fbfbfb;border:1px solid #eee;overflow: hidden;width:298px;padding:0 0 15px 15px;
+    a{display: block;width: 50px;height: 50px;border:1px solid #91be16;border-radius: 5px;background: #fff;color:#91be16;font:12px/25px "";text-align: center;padding:0 10px;box-sizing:border-box;float: left;margin:15px 0 0 15px;}
+    a:hover{background: #91be16;color:#fff;}}}
+    .cont-r{float: left;
+    span{display: block;height: 48px;font:18px/44px "";box-sizing: border-box;border-top:4px solid #91be16;width: 126px;text-align:center;color:#91be16;border-right: 1px solid #91be16;}
+    ul{border-top: 1px solid #eee;border-left:1px solid #eee;overflow: hidden;width:882px;
+    li{border-bottom: 1px solid #eee;border-right: 1px solid #eee;width: 176px;height: 273px;padding:20px 19px 0 19px;box-sizing:border-box;float: left;
+    img{width:140px;height: 140px;display: block;}
+    b{font:14px/20px "";margin-top:14px;width:140px;display: block;color:#3e4141;overflow: hidden;height: 20px;}
+    i{font:12px/20px "";width: 140px;display: block;color:#898989;overflow: hidden;height: 20px;}
+    s{color:#ff8100;font:14px/40px "";}}}}}
+
+/*楼层*/
+#floor{position: fixed;top:200px;left: 0;
+    div{width: 40px;height: 40px;color:#91be16;border:1px solid #91be16;box-sizing: border-box;padding:4px 5px;font:12px/16px "";cursor: pointer;}
+    div:hover{background: #91be16;color:#fff;}
+}

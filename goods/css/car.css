@@ -29,7 +29,9 @@
     float: left;
     font: 12px/100px "";
     text-align: center;
-    width: 200px; }
+    width: 200px; 
+    height: 100px;
+    overflow: hidden;}
   #car ul li b {
     display: block;
     float: left;

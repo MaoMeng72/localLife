@@ -176,12 +176,13 @@ header .myself {
   float: left;
   width: 123px;
   height: 38px;
-  background: #f8f8f6 url(../images/user.png) no-repeat 10px;
+  background: #ff6900;
   text-align: center;
   border: 1px solid #e5e5e5;
   margin-top: 38px;
-  color: #3e4141;
-  font: 12px/38px ""; }
+  color: #fff;
+  font: 12px/38px "";
+  cursor: pointer; }
 
 header .car {
   float: left;
@@ -192,7 +193,8 @@ header .car {
   border: 1px solid #e5e5e5;
   margin: 38px 0 0 20px;
   color: #3e4141;
-  font: 12px/38px ""; }
+  font: 12px/38px "";
+  cursor: pointer; }
 
 /* 导航栏 */
 nav {

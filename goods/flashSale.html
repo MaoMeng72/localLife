@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>商品列表</title>
+    <title>限时抢购</title>
     <link rel="stylesheet" href="../css/public.css">
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="css/list.css">
+    <link rel="stylesheet" href="css/goods.css">
+    <link rel="stylesheet" href="css/flashSale.css">
 </head>
 <body>
     <!-- 顶部 -->
@@ -104,14 +105,54 @@
         </div>
     </nav>
 
-   <section id="list" class="margin clear">
-       <!-- <div class="list"><a href="#">
-            <img src="../images/1.png" alt="">
-            <span>这是名字这是名字这是名字</span>
-            <b>这是描述这是描述这是描述</b>
-            <s>￥1290.00</s>
-       </a></div> -->
-   </section>
+  <!-- 商品详情 -->
+  <section id="goods" class="margin">
+        <div class="link">
+            <a href="../index.html">首页</a>
+            <b>&gt;</b>
+            <a href="list.html">商品列表</a>
+            <b>&gt;</b>
+            <a href="#" class="details">限时抢购</a>
+        </div>
+        <div class="goods-b">
+             <div class="box">
+                <div class="s_box">
+                    <img alt="" src="../images/1.png">
+                    <span></span>
+                </div>
+                <div class="b_box">
+                    <img alt="" src="../images/1.png">
+                </div>
+            </div>
+            <div class="introduce">
+                 <div class="title">
+                     <h3>这是名字这是名字这是名字</h3>
+                     <h4>这是描述这是描述</h4>
+                 </div>
+                 <div class="buy">
+                     <p><span>促销价</span><b>￥90.00</b><s>￥109.00</s></p>
+                     <img src="images/buy.png" alt="">
+                 </div>
+                 <div class="car">加入购物车</div>
+                 <div class="rush">
+                     <span>限时抢购</span>
+                     <b>00:00:00</b>
+                 </div>
+            </div> 
+        </div>
+    </section>
+    
+    <!-- 选项卡 -->
+    <section id="tab" class="margin">
+        <ul>
+            <li class="li1">商品详情</li>
+            <li class="li2">服务保障</li>
+            <li class="li3">全部评论</li>
+        </ul>
+        <div class="zh">
+           <img src="https://image6.benlailife.com//ProductNewDetailImage/P0000299343TC/8812d8c7-6315-4a64-a729-86b3f1891b01.jpg?t=196&imageView2/2/format/webp" alt="">
+        </div>
+    </section>
 
 
     <!-- 优势 -->
@@ -176,9 +217,9 @@
         <p class="p2">京公网安备 11010502022386号</p>
     </footer>
 </body>
-<script src="../js/libs/jquery.js"></script>
 <script src="../js/libs/ajax.2.0.js"></script>
 <script src="../js/index.js"></script>
 <script src="../js/logSuccess.js"></script>
-<script src="js/list.js"></script>
+<script src="js/magnifier.js"></script>
+<script src="js/flashSale.js"></script>
 </html>
